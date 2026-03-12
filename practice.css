@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
+/}
 ol, ul {
 	list-style: none;
 }
@@ -51,52 +51,155 @@ table {
 {
 display: flex;
 justify-content: center;
-height: 100px;
+height: 120px;
+align-items: center;
+}
+
+.left
+{
+display: flex;
+justify-content: left;
+height: 120px;
+align-items: center;
+}
+
+.right
+{
+display: flex;
+justify-content: right;
+height: 120px;
 align-items: center;
 }
 
 body
 {
-background-image: url("trees.png");
+background-color: #97CAFF;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100%, 100%;
 height: 3000px;
 }
 
-.squigglebox
-{
-height: 400px;
-width: 400px;
-transform: rotate(90deg);
-position: relative;
-}
 
-.cloudBox
+/*Mc cloud stuff*/
+.cloudBoxMc
 {
 position: relative;
-width: 345;
-height: 172;
-padding-top: 20vh;
+width: auto;
+height: auto;
+margin-top: 15vh;
+margin-left: 5vw;
+margin-right: 5vw;
 }
 
-.cloudText
+.cloudTextMc
 {
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-padding-top: 20vh;
+text-decoration: none;
 }
 
-.cloud
+.cloudMc
 {
 position: relative;
+transform: translate(30%);
 width: 345;
 height: 172;
 }
 
+
+/*Yt cloud stuff*/
+.cloudBoxYt
+{
+position: relative;
+width: auto;
+height: auto;
+margin-top: 15vh;
+margin-left: 5vw;
+margin-right: 5vw;
+}
+
+.cloudTextYt
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -25%);
+text-decoration: none;
+}
+
+.cloudYt
+{
+position: relative;
+width: 345;
+height: 172;
+-webkit-transform: rotate(-7deg);
+transform: rotate(-7deg);
+}
+
+/*Git cloud stuff*/
+.cloudBoxGit
+{
+position: relative;
+width: auto;
+height: auto;
+margin-top: 15vh;
+margin-left: 5vw;
+margin-right: 5vw;
+}
+
+.cloudTextGit
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -25%);
+text-decoration: none;
+}
+
+.cloudGit
+{
+position: relative;
+width: 345;
+height: 172;
+-webkit-transform: rotate(-4deg);
+transform: rotate(-4deg);
+}
+/*other cloud classes*/
+
+.LinkImage
+{
+height: 100px;
+width: 100px;
+}
+
+.title
+{
+color: white;
+font-size: 30px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
 .name
 {
-padding-top: 20vh;
+margin-top: 10vh;
+}
+
+.treeLine
+{
+position:fixed;
+bottom:0px;
+height: auto;
+width: 100%;
+z-index: 99;
+}
+
+.seperator
+{
+height:50vh;
+width:100%;
 }
